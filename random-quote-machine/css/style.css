@@ -1,0 +1,38 @@
+body {
+	padding-top: 5em;
+	background-image: url("https://www.publicdomainpictures.net/pictures/40000/velka/cloudy-day-1366798736VRh.jpg");
+}
+
+.quote-box {
+  width: 600px ;
+  margin-left: auto ;
+  margin-right: auto ;
+  background-color: white;
+  border-radius: 15px;
+  padding: 1em;
+}
+
+.quote {
+  padding: 1em;
+  font-size:1.5em;
+}
+
+#quote-text {
+  margin-left:0.5em;
+}
+
+#author {
+  padding: 0 1em 1em  1em;
+  text-align:right;
+  font-size:1.2em;
+}
+
+.buttons {
+  margin-left:1em;
+}
+
+#new-quote {
+  margin-right:1em;
+  float:right;
+}
+
