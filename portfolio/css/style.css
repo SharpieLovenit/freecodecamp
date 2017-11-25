@@ -1,0 +1,44 @@
+body {
+  position: relative;
+  padding-top: 70px;
+  /* padding for fixed navbar */
+}
+
+.navbar {
+  padding: 1rem;
+  background-color: #673AB7;
+}
+
+.section {
+  margin-top: 2rem;
+}
+
+.section-heading {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.btn-secondary {
+  background-color: #D1C4E9;
+}
+
+// 20px gutter
+.gutter-20.row {
+  margin: -20px;
+}
+
+.gutter-20 > [class^="col-"] {
+  padding: 20px;
+}
+
+.col-form-label {
+  text-align: right;
+}
+
+.footer {
+  height: 70px;
+  color: white;
+  margin-top: 2rem;
+  background-color: #673AB7;
+}

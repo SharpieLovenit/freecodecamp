@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <body id="top" data-spy="scroll" data-target=".navbar">
+  <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#nav-content" aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+    <div class="container">
+      <a class="navbar-brand" href="#">Stephan Olivier</a>
+
+      <div class="collapse navbar-collapse justify-content-end" id="nav-content">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#top">ABOUT</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">PORTFOLIO</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <section class="section about-section" id="about">
+      <h1 class="section-heading">About me</h1>
+
+
+      <div class="row">
+        <div class="col-9 align-self-center">
+          Hi, my name is Stephan Olivier and I have been coding most of my life. I started as a kid on a Commodore 64, got a job when I was 18 as a system administrator and have always learned most of my skills on the job. For the last 10+ years I have been working as developer on a large telco billing system, using the applications own programming language, Perl and shell scripting for the backend quite a lot of SQL.<br><br>I already played around building websites for fun in the early ninetees, but I haven't done much with it for the last 10 years, so all this Javascript and Bootstrap stuff is pretty new to me :)<br><br>I am currently studying to become a Full Stack Developer using freeCodeCamp and I will use this portfolio to showcase my work. 
+        </div>
+
+        <div class="col-sm-3">
+          <img src="https://s20.postimg.org/bn4paw8jx/10500524_10152502267554795_2626021092371997933_n.jpg" class="img-fluid rounded-circle">
+        </div>
+
+      </div>
+    </section>
+    <!-- /about-section -->
+    <hr>
+
+
+    <section class="section portfolio-section">
+      <h1 class="section-heading">Portfolio</h1>
+      <div class="row gutter-20" id="portfolio">
+
+        <div class="col-md-6">
+          <div class="card">
+            <img class="card-img-top img-fluid w-100" src="https://res.cloudinary.com/dwiclyeug/image/upload/v1511532360/Screenshot_2_fitssq.png" alt="Johan Cruyff Tribute">
+            <div class="card-block text-center">
+              <h4 class="card-title">Johan Cruyff Tribute</h4>
+              <p class="card-text">Build a Tribute Page project for freeCodeCam.</p>
+              <a class="btn btn-secondary btn-lg" href="http://codepen.io/SharpieLovenit/full/PmmKom/" target="_blank"><i class="fa fa-clone left"></i> View project</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6">
+          <div class="card">
+            <img class="card-img-top img-fluid w-100" src="https://res.cloudinary.com/dwiclyeug/image/upload/v1497731236/portfolio/screenshot_quote.png" alt="Random Quote Machine">
+            <div class="card-block  text-center">
+              <h4 class="card-title">Random Quote Machine</h4>
+              <p class="card-text">Build a Random Quote Machine project for freeCodeCamp</p>
+              <a class="btn btn-secondary btn-lg" href="https://codepen.io/SharpieLovenit/full/WOGaVV/" target="_blank"><i class="fa fa-clone left"></i> View project</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6">
+          <div class="card">
+            <img class="card-img-top img-fluid w-100" src="https://placeimg.com/640/500/any" alt="">
+            <div class="card-block  text-center">
+              <h4 class="card-title">Project title</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam.</p>
+              <a class="btn btn-secondary btn-lg" href="#" target="_blank"><i class="fa fa-clone left"></i> View project</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="https://placeimg.com/640/500/any" alt="">
+            <div class="card-block  text-center">
+              <h4 class="card-title">Project title</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat fugiat, laboriosam.</p>
+              <a class="btn btn-secondary btn-lg" href="#" target="_blank"><i class="fa fa-clone left"></i> View project</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- /portofolio row -->
+    </section>
+    <!-- /portofolio-section -->
+
+    <hr>
+    <div class="container">
+      <section class="section contact-section">
+        <h1 class="section-heading">Contact</h1>
+        <div class="row">
+          <div class="col-sm-12 col-md-8 offset-md-2">
+            <form action="mailto:stephan.olivier@gmail.com" method="post">
+              <div class="form-group">
+                <label for="name">Name <i class="fa fa-user" aria-hidden="true"></i></label>
+                <input type="text" class="form-control" id="name">
+              </div>
+              <div class="form-group">
+                <label for="email">E-Mail <i class="fa fa-envelope" aria-hidden="true"></i></label>
+                <input type="text" class="form-control" id="email">
+              </div>
+              <div class="form-group">
+                <label for="message">Message <i class="fa fa-pencil" aria-hidden="true"></i></label>
+                <textarea class="form-control" id="message" rows="5"></textarea>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-default">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    </div>
+    </section>
+    <!-- /contact-section -->
+  </div>
+  <!-- /container -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-left">
+          Stephan Olivier <i class="fa fa-copyright" aria-hidden="true"></i> 2017 All Rights Reserved
+        </div>
+
+        <div class="col-md-6 text-right">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a class="btn btn-social-icon btn-lg btn-linkedin" href="https://www.linkedin.com/in/stephanolivier/" target="_blank"><span class="fa fa-linkedin fa-4" aria-hidden="true"></span></a>
+            </li>
+            <li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-google" href="https://plus.google.com/+StephanOlivier1" target="_blank"><span class="fa fa-google-plus fa-4" aria-hidden="true"></span></a></li>
+            <li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-github" href="https://github.com/SharpieLovenit" target="_blank"><span class="fa fa-github fa-4" aria-hidden="true"></span></a></li>
+            <li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-twitter" href="https://twitter.com/Stephan_Olivier" target="_blank"><span class="fa fa-twitter fa-4" aria-hidden="true"></span></a></li>
+            <li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-facebook" href="https://www.facebook.com/StephanOlivier" target="_blank"><span class="fa fa-facebook fa-4" aria-hidden="true"></span></a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+  <script src='https://code.jquery.com/jquery-3.1.1.slim.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+
+  
+</body>
+</html>
