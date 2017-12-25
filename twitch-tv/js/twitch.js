@@ -3,11 +3,13 @@ var endpoint = 'https://api.twitch.tv/kraken/';
 var client_id = '3917l4p9kj2yrbkv3a0g53hdxofddv';
 
 $(document).ready(function () {
+    getTwitchChannels("btn-all");
+
     var channelData;
     $('.btn-group > .btn').click(function () {
         $(".btn-group > .btn").removeClass("active");
         $(this).addClass("active");
-        //console.log("Button clicked, id "+this.id+", text "+this.innerHTML);
+        $("#channels").empty();
         getTwitchChannels(this.id);
     });
 
@@ -17,10 +19,10 @@ $(document).ready(function () {
 
     function listChannel(isOnline, channel, channelData, streamData) {
         var status = isOnline ? 'online' : 'offline';
-
-        name = channelData.display_name;
-        logo = channelData.logo;
-        url = channelData.url;
+        
+        var name = channelData.display_name;
+        var logo = channelData.logo;
+        var url = channelData.url;
 
         if (isOnline) {
             game = streamData.game;
@@ -28,11 +30,19 @@ $(document).ready(function () {
         else {
             game = 'Offline'
         }
-
-        console.log('name: ' + name);
-        console.log('logo: ' + logo);
-        console.log('url: ' + url);
-        console.log('game: ' + game);
+       
+        var html = '<div class="row well-sm channel ' + status + '">';
+        html += '<div class="col-xs-2"><img class="img-rounded channel-logo" src="' + logo + '"></div>';
+        html += '<div class="col-xs-10"><a href=" ' + url + '" target="_blank">' + name + '</a></div>';
+        html += '<div class="col-xs-10">' + game + '</div>';
+        html += '</div>';
+        
+        if (isOnline) {
+            $("#channels").prepend(html);
+        }
+        else {
+            $("#channels").append(html);
+        }
 
     }
 
