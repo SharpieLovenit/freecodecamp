@@ -6,6 +6,34 @@
 .container {
     padding: 40px;
 }
-#twitch-logo {
+
+.twitch-logo {
     padding: 10px;
 }
+
+.channels {
+    border-bottom: 2px solid #ffffff;
+}
+
+.online {
+    background-color: #9ecc6f;
+}
+
+.offline {
+    background-color: #f79d8d
+}
+
+.channel {
+    border-bottom: 1px solid #ffffff;
+    text-align: center;
+    padding: 5px;
+}
+
+.channel-logo {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+
+
+
