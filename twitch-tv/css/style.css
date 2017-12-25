@@ -11,6 +11,10 @@
     padding: 10px;
 }
 
+.selector {
+    border-bottom: 2px solid #ffffff;
+}
+
 .channels {
     border-bottom: 2px solid #ffffff;
 }
