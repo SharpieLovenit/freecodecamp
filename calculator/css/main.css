@@ -1,0 +1,113 @@
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+.container {
+  margin: 50 auto;
+  width: 300px;
+  height: 470px;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+
+/* Calculator */
+
+.calc {
+  background-color: #DFD8D0;
+  border: 2px solid;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.calc-header {
+  color: black;
+  text-align: center;
+  padding: 10px
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Display */
+
+.display {
+  background-color: #C3C2AB;
+  text-align:right;
+  height: 70px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+.entry {
+  height: 35px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.result {
+  height: 20px;
+  color: #ffffff;
+}
+
+
+.inputs {
+  margin: 10px;
+}
+
+
+
+/*
+  ========================================
+  Buttons
+  ========================================
+
+*/
+
+
+button {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 3px;
+  font-size: 20px;
+}
+
+.btn-c {
+  background-color: red;
+  color: white;
+}
+
+.btn-result {
+  height: 106px;
+  float: right;
+}
+
+.btn-zero {
+  width: 110px;
+}
+
+
