@@ -29,6 +29,7 @@ html {
   background-color: #212121;
   font-size: 40px;
   color: #ffffff;
+  box-shadow: 1px 1px 10px 0px #424242;
 }
 
 /* Countdown */
@@ -40,7 +41,17 @@ html {
 }
 
 /* Icons */
-.material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
-.material-icons.md-64 { font-size: 64px; }
+.material-icons.md-100 { font-size: 100px; }
 .material-icons.redA200 { color: #ff5252; }
+
+/* Play/Stop button */
+button.play_stop {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+button.play_stop:hover {
+  opacity: .75;
+}
