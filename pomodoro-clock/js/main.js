@@ -12,8 +12,18 @@ $(document).ready(function () {
     var x; // setInterval
 
     updateTimer(pomodoroSec);
+
+    $('.plus').on('click', function () {
+        pomodoroSec += 60;
+        updateTimer(pomodoroSec);
+    });
+
+    $('.min').on('click', function () {
+        pomodoroSec -= 60;
+        updateTimer(pomodoroSec);
+    });
  
-    $('.play_stop').click(function () {
+    $('.play_stop').on('click', function () {
         if (timerOn) {
             stopTimer();
         } else {
@@ -24,7 +34,15 @@ $(document).ready(function () {
     function startTimer() {
         timerOn = true;
         remainingSec = pomodoroSec;
+
+        // disable plus/min buttons
+        $('.plus, .min').attr('disabled',true);
+        $('.material-icons.plusmin').css('opacity', '0.26');
+
+        // Change start_stop button span icon to stop icon
         $('.play_stop span').text('stop');
+
+        // Start Interval
         x = setInterval(function(){
             remainingSec--;
             updateTimer(remainingSec);
@@ -34,8 +52,18 @@ $(document).ready(function () {
 
     function stopTimer() {
         timerOn = false;
+
+        // enable plus/min buttons
+        $('.plus, .min').attr('disabled',false);
+        $('.material-icons.plusmin').css('opacity', '1');
+
+        // Change start_stop button span icon back to play icon
         $('.play_stop span').text('play_arrow');
+
+        // Disable Interval
         clearInterval(x);
+
+        // Reset timer back to start value
         updateTimer(pomodoroSec);
     }
 
