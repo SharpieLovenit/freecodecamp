@@ -6,6 +6,7 @@ $(document).ready(function () {
     // Initialize default Pomodoro time to 25 min
     // Can be updated by user with +/- buttons
     var pomodoroSec = 25*60;
+    var minimumSec = 60;
 
     var remainingSec;
     var timerOn = false;
@@ -19,7 +20,7 @@ $(document).ready(function () {
     });
 
     $('.min').on('click', function () {
-        pomodoroSec -= 60;
+        if (pomodoroSec > minimumSec) pomodoroSec -= 60;
         updateTimer(pomodoroSec);
     });
  
@@ -46,7 +47,10 @@ $(document).ready(function () {
         x = setInterval(function(){
             remainingSec--;
             updateTimer(remainingSec);
-            if (remainingSec == 0) clearInterval(x);
+            if (remainingSec == 0) {
+                document.getElementById('audiotag1').play();
+                clearInterval(x);
+            }
         }, 1000);
     }
 
@@ -68,8 +72,8 @@ $(document).ready(function () {
     }
 
     function updateTimer(seconds) {
-        var min = Math.floor(seconds/60);
+        var min = '' + Math.floor(seconds/60);
         var sec = '' + seconds % 60;
-        $('.countdown').html(min+':'+sec.padStart(2,'0'));
+        $('.countdown').html(min.padStart(2,'0')+':'+sec.padStart(2,'0'));
     }
 });
