@@ -50,6 +50,9 @@ $(document).ready(function () {
             if (remainingSec == 0) {
                 document.getElementById('audiotag1').play();
                 clearInterval(x);
+
+                // Change start_stop button span icon to stop icon
+                $('.play_stop span').text('replay');
             }
         }, 1000);
     }
